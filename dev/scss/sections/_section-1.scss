@@ -2,12 +2,11 @@
     section-1
 ============= */
 #section-1 {
-
     img {
         width: 100%;
     }
 
-    ul {
+    ul{
 
         @include md {
             display: grid;
@@ -28,17 +27,17 @@
             }
 
             a {
-                grid-area: hero-content;
+                grid-area: section-1-content;
                 border: 1px solid red;
             }
         }
 
-        #hero-sub-1 {
-            background-color: $yellowDark;
+        #section-1-sub-1 {
+            background-color: $darkpink;
         }
 
-        #hero-sub-2 {
-            background-color: $yellow;
+        #section-1-sub-2 {
+            background-color: $pink;
 
             @include xl {
                 grid-template-columns: 16px 480px auto;
