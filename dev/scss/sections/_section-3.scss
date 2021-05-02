@@ -2,8 +2,34 @@
     section-3
 ============= */
 #section-3 {
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+
+        grid-template-areas: ". section-3 .";
+    }
+
     ul {
         display: grid;
+
+        @include md {
+            grid-template-columns: 50% auto;
+        }
+
+        @include lg {
+            grid-template-columns: 60% auto;
+        }
+
+        @include xl {
+            grid-area: section-3;
+
+            grid-template-columns: 65% auto;
+            grid-template-areas:
+                "s3-1 s3-2"
+                "s3-1 s3-3";
+        }
+
 
         li {
             img {
@@ -11,9 +37,27 @@
             }
         }
 
-        #section-3 {
+        #h2-1 {
+
+            @include xl {
+                grid-area: s3-1;
+            }
+        }
+
+        #h2-2 {
+
+            @include xl {
+                grid-area: s3-2;
+            }
+        }
+
+        #h2-3 {
             display: none;
+
+            @include xl {
+                display: list-item;
+                grid-area: s3-3;
+            }
         }
     }
-
 }
