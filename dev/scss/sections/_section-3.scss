@@ -1,0 +1,19 @@
+/* =============
+    section-3
+============= */
+#section-3 {
+    ul {
+        display: grid;
+
+        li {
+            img {
+                width: 100%;
+            }
+        }
+
+        #section-4-3 {
+            display: none;
+        }
+    }
+
+}
