@@ -48,7 +48,7 @@
                 section {
                     display: grid;
                     grid-template-columns: 16px auto 16px;
-                    grid-template-areas: ". new-content .";
+                    grid-template-areas: ". section-4-content .";
 
                     >div {
                         grid-area: new-content;

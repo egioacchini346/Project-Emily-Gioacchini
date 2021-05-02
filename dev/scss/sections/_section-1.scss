@@ -21,7 +21,7 @@
         li {
             display: grid;
             grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". hero-content .";
+            grid-template-areas: ". section-1-content .";
 
             @include xl {
                 grid-template-columns: auto 480px 16px;
