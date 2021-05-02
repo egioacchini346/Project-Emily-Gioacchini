@@ -5,7 +5,7 @@
     @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". new .";
+        grid-template-areas: ". section-4 .";
     }
 
     @include xl {
@@ -15,7 +15,7 @@
     >div {
 
         @include md {
-            grid-area: new;
+            grid-area: section-4;
         }
 
         ul {
@@ -25,21 +25,21 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-areas:
-                    "n1 n1 n2 n2"
-                    "n3 n3 n4 n4"
-                    ". n5 n5 .";
+                    "s4-1 s4-1 s4-2 s4-2"
+                    "s4-3 s4-3 s4-4 s4-4"
+                    ". s4-5 s4-5 .";
                 gap: 16px;
             }
 
             @include lg {
                 grid-template-columns: repeat(6, 1fr);
                 grid-template-areas:
-                    "n1 n1  n2 n2 n3 n3"
-                    ". n4 n4 n5 n5 .";
+                    "s4-1 s4-1 s4-2 s4-2 s4-3 s4-3"
+                    ". s4-4 s4-4 s4-5 s4-5 .";
             }
 
             li {
-                background-color: $greyLight;
+                background-color: $mintgreen;
 
                 img {
                     width: 100%;
@@ -51,42 +51,42 @@
                     grid-template-areas: ". section-4-content .";
 
                     >div {
-                        grid-area: new-content;
+                        grid-area: section-4-content;
 
                         button {
-                            background-color: $yellow;
+                            background-color: $pink;
                         }
                     }
                 }
             }
 
-            #n1 {
+            #s4-1 {
                 @include md {
-                    grid-area: n1;
+                    grid-area: s4-1;
                 }
             }
 
-            #n2 {
+            #s4-2 {
                 @include md {
-                    grid-area: n2;
+                    grid-area: s4-2;
                 }
             }
 
-            #n3 {
+            #s4-3 {
                 @include md {
-                    grid-area: n3;
+                    grid-area: s4-3;
                 }
             }
 
-            #n4 {
+            #s4-4 {
                 @include md {
-                    grid-area: n4;
+                    grid-area: s4-4;
                 }
             }
 
-            #n5 {
+            #s4-5 {
                 @include md {
-                    grid-area: n5;
+                    grid-area: s4-5;
                 }
             }
         }
